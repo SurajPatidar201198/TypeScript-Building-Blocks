@@ -1,0 +1,33 @@
+<form >
+    <div class="form-group">
+        <label>Name</label>
+        <input type="text" 
+        name="nametxt"
+        [(ngModel)]="var_name" class="form-control" required/>
+    </div>
+
+    <div class="form-group">
+        <label>Email</label>
+        <input type="text" 
+        name="emailtxt"
+        [(ngModel)]="var_email"
+        class="form-control" required/>
+    </div>
+
+    <div class="form-group">
+        <label>Branch</label>
+        <select class="form-control" name="branchcb" [(ngModel)]="var_branch">
+            <option *ngFor="let branch of branches" [value]="branch">{{branch}}</option>
+        </select>
+    </div>
+
+    <button class="btn btn-success"
+    (click)="register_clickHandler()"
+    >Register</button>
+
+
+    <br><br>
+    {{var_name}} {{var_email}} {{var_branch}}
+    <br><br>
+
+</form>

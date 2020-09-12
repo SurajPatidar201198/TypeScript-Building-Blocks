@@ -3,12 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { UserdisplayComponent } from './components/userdisplay/userdisplay.component';
+import { CampusplacementComponent } from './components/campusplacement/campusplacement.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     UserdisplayComponent,
+    CampusplacementComponent,
   ],
   imports: [
     BrowserModule

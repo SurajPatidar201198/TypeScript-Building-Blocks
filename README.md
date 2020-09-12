@@ -21,7 +21,9 @@
 ### Move inside component directory
 #### cd .\components
 
-#### Now create a new component by following command:
+### Now create a new component by following command:
 #### ng g c header
 #### ng g c footer
 
+### To run the project type :
+#### ng serve -o
